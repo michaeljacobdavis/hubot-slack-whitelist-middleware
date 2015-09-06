@@ -1,7 +1,24 @@
 ## Hubot Slack Whitelist
+
 Don't want `#general` to trigger your bot?
 
 **Use this.**
+
+## How to use
+
+**Install**
+```
+npm install --save hubot-slack-whitelist-middleware
+```
+
+**Register**
+
+In `external-scripts.json` add
+
+```
+"hubot-slack-whitelist-middleware"
+```
+
 
 This is meant for slack, but will work with any [adapter](https://github.com/github/hubot/blob/master/docs/adapters.md) that exposes the current channel via `context.response.envelope.room`.
 
