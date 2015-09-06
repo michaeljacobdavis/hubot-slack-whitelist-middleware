@@ -1,6 +1,6 @@
 {
   "name": "hubot-slack-whitelist-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add ability to whitelist channels in slack.",
   "keywords": [
     "hubot",
