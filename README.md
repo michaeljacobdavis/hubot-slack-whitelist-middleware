@@ -1,5 +1,14 @@
+## Hubot Slack Whitelist
+Don't want `#general` to trigger your bot?
+
+**Use this.**
+
+This is meant for slack, but will work with any [adapter](https://github.com/github/hubot/blob/master/docs/adapters.md) that exposes the current channel via `context.response.envelope.room`.
+
 ## Environment Variables
 There are two ways to set a whitelist:
 
-`HUBOT_WHITELIST` - A comma separated list (no spaces). `HUBOT_WHITELIST=random,general`
-`HUBOT_WHITELIST_PATH` - Set the path (relative to your hubot directory) to a `json`/`js`/`coffee` file that returns an array of whitelisted channels.
+Environment Variable | Description | Example
+--- | --- | ---
+`HUBOT_WHITELIST` | A comma separated list (no spaces). | `random,general`
+`HUBOT_WHITELIST_PATH` | Set the path (relative to your hubot directory) to a `json`/`js`/`coffee` file that returns an array of whitelisted channels. | `whitelist.json`
