@@ -2,6 +2,11 @@
   "name": "hubot-slack-whitelist-middleware",
   "version": "1.0.0",
   "description": "Add ability to whitelist channels in slack.",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "whitelist"
+  ],
   "main": "index.coffee",
   "license": "MIT",
   "dependencies": {
