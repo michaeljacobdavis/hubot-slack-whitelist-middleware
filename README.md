@@ -1,6 +1,7 @@
 ## Hubot Slack Whitelist
 
 Don't want `#general` to trigger your bot?
+Now able to whitelist users as well.
 
 **Use this.**
 
