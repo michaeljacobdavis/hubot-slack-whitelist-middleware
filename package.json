@@ -10,15 +10,15 @@
   "main": "index.coffee",
   "license": "MIT",
   "dependencies": {
-    "hoek": "^2.14.0"
+    "@hapi/hoek": "^8.5.0"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaeljacobdavis/hubot-slack-whitelist-middleware.git"
+    "url": "git+https://github.com/Censio/hubot-slack-whitelist-middleware.git"
   },
   "bugs": {
-    "url": "https://github.com/michaeljacobdavis/hubot-slack-whitelist-middleware/issues"
+    "url": "https://github.com/Censio/hubot-slack-whitelist-middleware/issues"
   },
-  "homepage": "https://github.com/michaeljacobdavis/hubot-slack-whitelist-middleware#readme"
+  "homepage": "https://github.com/Censio/hubot-slack-whitelist-middleware#readme"
 }

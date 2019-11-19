@@ -21,6 +21,7 @@ module.exports = (robot) ->
     # Unless the room is in the whitelist
     unless reach(context, 'response.envelope.room') in whitelist
       # We're done
+      context.response.reply 'Sorry, truebot is not supported on this channel'
       context.response.message.finish()
       done()
     else
