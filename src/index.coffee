@@ -2,7 +2,7 @@
 #   HUBOT_WHITELIST
 #   HUBOT_WHITELIST_PATH
 
-reach = require('hoek').reach
+reach = require('@hapi/hoek').reach
 path = require('path')
 
 module.exports = (robot) ->
