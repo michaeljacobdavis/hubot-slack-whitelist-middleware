@@ -20,8 +20,8 @@ module.exports = (robot) ->
   robot.receiveMiddleware (context, next, done) ->
     # Unless the room is in the whitelist
     unless reach(context, 'response.envelope.room') in whitelist
-      # We're done
-      context.response.reply 'Sorry, truebot is not supported on this channel'
+      if context.response.message.text.search /truebot/ == 0
+        context.response.reply 'Sorry, truebot is not supported on this channel'
       context.response.message.finish()
       done()
     else
