@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.receiveMiddleware (context, next, done) ->
     # Unless the room is in the whitelist
     unless reach(context, 'response.envelope.room') in whitelist
-      if context.response.message.text.includes(robot.name.toLowerCase() + ' ', 0)
+      if context.response.message.text.startsWith(robot.name.toLowerCase())
         context.response.reply 'Sorry, ' + robot.name + ' is not supported on this channel'
       context.response.message.finish()
       done()
